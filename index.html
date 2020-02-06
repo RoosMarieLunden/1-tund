@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="firstname" id="firstname" />
+    <input type="date" name="date" id="date" />
+    <div id="demo">Tere javascript</div>
+    <button onclick="myFunction();">Muudan teksti</button>
+    <script>
+    var counter = 1;
+      function myFunction() {
+        console.log("Muudan teksti ära.");
+        if(counter == 1){
+            counter = 2;
+            document.getElementById("demo").innerHTML = "Minu esimene javascript.";
+        }else{
+            counter = 1;
+            document.getElementById("demo").innerHTML = "Teine tekst";
+        }   
+      }
+
+      const first = 1;
+      console.log(first);
+      let second = 2;
+      console.log(second);
+      second = "teine";
+      console.log(second);
+      var third = 3;
+      third = "kolmas";
+      console.log(third);
+    </script>
+  </body>
+</html>
